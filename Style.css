@@ -1,0 +1,57 @@
+﻿
+body {
+    background: linear-gradient(to right,white,#8eb6dc);
+    padding: 0;
+    font-family: Calibri, sans-serif;
+}
+
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+#Btn_index,
+#btnPG3 {
+    background-color: red;
+    color: white;
+    border: 2px solid darkred;
+}
+
+    #Btn_index:hover,
+    #btnPG3:hover {
+        box-shadow: 0 0 10px red;
+    }
+
+
+#btnCalcular,
+#Btn_Unir,
+#btnSend,
+#BtnPG1 {
+    background-color: green;
+    color: white;
+    border: 2px solid darkgreen;
+}
+
+    #btnCalcular:hover,
+    #Btn_Unir:hover,
+    #btnSend:hover,
+    #BtnPG1:hover {
+        box-shadow: 0 0 10px green;
+    }
+
+
+#btnPG2 {
+    background-color: black; 
+    color: white;
+    border: 2px solid #333;
+}
+
+    #btnPG2:hover {
+        box-shadow: 0 0 10px #000;
+    }
