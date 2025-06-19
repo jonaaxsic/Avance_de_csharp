@@ -11,7 +11,7 @@ namespace miApp
 {
 
 
-    public partial class index
+    public partial class WebForm5
     {
 
         /// <summary>
@@ -24,57 +24,48 @@ namespace miApp
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control BtnPG1.
+        /// Control txtNumeros.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnPG1;
+        protected global::System.Web.UI.WebControls.TextBox txtNumeros;
 
         /// <summary>
-        /// Control btnPG2.
+        /// Control btnCalcular.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPG2;
+        protected global::System.Web.UI.WebControls.Button btnCalcular;
 
         /// <summary>
-        /// Control btnPG3.
+        /// Control lblSuma.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPG3;
+        protected global::System.Web.UI.WebControls.Label lblSuma;
 
         /// <summary>
-        /// Control BtnPG4.
+        /// Control lblPromedio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnPG4;
+        protected global::System.Web.UI.WebControls.Label lblPromedio;
 
         /// <summary>
-        /// Control BtnVariables.
+        /// Control Btn_index.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnVariables;
-
-        /// <summary>
-        /// Control btnPG5.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPG5;
+        protected global::System.Web.UI.WebControls.Button Btn_index;
     }
 }

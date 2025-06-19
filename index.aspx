@@ -75,6 +75,17 @@
                   </div>
                  </div>
              </div>
+                 <!-- Opción 6 -->
+                <div class="col-md-4" >
+                <div class="card shadow-sm h-100">
+               <div class="card-body d-flex flex-column justify-content-between">
+               <h5 class="card-title">Vectores</h5>
+                <p class="card-text">Ir a Calculadora de Vector</p>
+               <asp:Button ID="btnPG5" runat="server" Text="Ir" CssClass="btn btn-info w-100" OnClick="btnPG5_Click" />
+               </div>
+             </div>
+            </div>
+            
 
 
 
