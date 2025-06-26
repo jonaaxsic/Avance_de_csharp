@@ -11,6 +11,15 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="container is-max-desktop py-6">
+            <div class="is-flex is-justify-content-flex-end" style="margin-bottom: 1rem;">
+                <button id="themeToggleButton" class="button is-light is-outlined is-small">
+                    <span class="icon">
+                        <i class="fas fa-moon"></i>
+                    </span>
+                    <span id="themeButtonText">Modo Oscuro</span>
+                </button>
+            </div>
 
        <div class="control">
     <asp:Button ID="btnVolver" runat="server" Text="Volver al Inicio" CssClass="button is-link is-light is-outlined is-normal" OnClick="btnVolver_Click" />
