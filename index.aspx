@@ -104,7 +104,7 @@
                 </div>
 
 
-                 <%-- Opción 6: Vectores 
+                 <%-- Opción 7: 
  <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
      <div class="box has-text-centered p-5 card-item" data-background-class="has-background-white-bis" data-text-class="has-text-black" style="min-height: 220px; display: flex; flex-direction: column; justify-content: space-between;">
          <p class="title is-5 has-text-link-dark mb-3">
