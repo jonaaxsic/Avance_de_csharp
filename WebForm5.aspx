@@ -28,11 +28,7 @@
                     <h1 class="title is-2 has-text-weight-bold">Jonathan Rodriguez & Yorsua Herrera</h1>
                     <h5 class="subtitle is-5 has-text-grey">Ejemplo de Arrays y Vectores</h5>
                     <img src="IMG/IPCHILE.png" class="image is-128x128 mx-auto my-3" style="max-width: 200px;" alt="Logo IPCHILE" />
-                    <%-- Botón de Modo Oscuro - Descomentar si quieres que esté visible en esta página también --%>
-                    <%-- <button id="themeToggleButton" class="button is-dark is-outlined is-pulled-right" style="position: absolute; top: 1rem; right: 1rem;">
-                        <span class="icon"><i class="fas fa-moon"></i></span>
-                        <span id="themeButtonText">Modo Oscuro</span>
-                    </button> --%>
+                  
                 </div>
             </div>
         </section>
