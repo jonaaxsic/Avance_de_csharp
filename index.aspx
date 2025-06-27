@@ -104,18 +104,18 @@
                 </div>
 
 
-                 <%-- Opción 7: 
+                 <%-- Opción 7: formulario --%>
  <div class="column is-one-third-desktop is-half-tablet is-full-mobile">
      <div class="box has-text-centered p-5 card-item" data-background-class="has-background-white-bis" data-text-class="has-text-black" style="min-height: 220px; display: flex; flex-direction: column; justify-content: space-between;">
          <p class="title is-5 has-text-link-dark mb-3">
              <span class="icon is-small mr-2"><i class="fas fa-vector-square"></i></span>
-             Vectores
+             Formulario de contacto
          </p>
-         <p class="subtitle is-6 has-text-grey">Ir a Calculadora de Vector</p>
+         <p class="subtitle is-6 has-text-grey">Ir a Formulario</p>
          <asp:Button ID="btnPG6" runat="server" Text="Ir" CssClass="button is-link is-light is-outlined is-fullwidth is-large mt-4" OnClick="btnPG6_Click" />
      </div>
  </div>
---%>
+
                
             </div>
         </div>

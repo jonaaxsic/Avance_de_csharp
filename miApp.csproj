@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Calculadora.aspx" />
+    <Content Include="Formulario.aspx" />
     <Content Include="IMG\LOGO-FONDO-BLANCO-JPG.jpg" />
     <Content Include="index.aspx" />
     <Content Include="Scripts\ModoOscuro.js" />
@@ -77,7 +78,6 @@
     <Content Include="WebForm3.aspx" />
     <Content Include="WebForm4.aspx" />
     <Content Include="WebForm5.aspx" />
-    <Content Include="WebForm6.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculadora.aspx.cs">
@@ -86,6 +86,13 @@
     </Compile>
     <Compile Include="Calculadora.aspx.designer.cs">
       <DependentUpon>Calculadora.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario.aspx.cs">
+      <DependentUpon>Formulario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formulario.aspx.designer.cs">
+      <DependentUpon>Formulario.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -129,13 +136,6 @@
     </Compile>
     <Compile Include="WebForm5.aspx.designer.cs">
       <DependentUpon>WebForm5.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm6.aspx.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm6.aspx.designer.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
