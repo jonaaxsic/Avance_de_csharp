@@ -84,7 +84,7 @@
 
                     <div class="field is-grouped is-justify-content-center pt-3">
                         <div class="control">
-                            <asp:Button ID="btnVolver" runat="server" Text="Volver al Inicio" CssClass="button is-link is-light is-outlined" OnClick="Btn_index_Click" />
+          <asp:Button ID="btnVolver" runat="server" Text="Volver al Inicio" CssClass="button is-link is-light is-outlined is-normal" OnClick="btnVolver_Click" />
                         </div>
                     </div>
                 </div>

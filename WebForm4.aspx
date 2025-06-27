@@ -51,7 +51,7 @@
                                 <asp:Button ID="btnMostrar" runat="server" Text="Mostrar Variables" CssClass="button is-success" OnClick="btnMostrar_Click" />
                             </div>
                             <div class="control">
-                                <asp:Button ID="btnVolver" runat="server" Text="Volver al Inicio" CssClass="button is-link is-light is-outlined" OnClick="Btn_index_Click" />
+                                <asp:Button ID="btnVolver" runat="server" Text="Volver al Inicio" CssClass="button is-link is-light is-outlined is-normal" OnClick="btnVolver_Click" />
                             </div>
                         </div>
                     </div>

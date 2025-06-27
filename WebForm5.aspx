@@ -57,9 +57,7 @@
                         
                         <div class="field is-grouped is-justify-content-center pt-5"> <%-- d-grid gap-2 a field is-grouped --%>
                             <div class="control">
-                                <%-- ID cambiado a btnVolver para consistencia con ModoOscuro.js --%>
-                                <asp:Button ID="btnVolver" runat="server" Text="Volver al Inicio" CssClass="button is-link is-light is-outlined" OnClick="Btn_index_Click" /> <%-- btn btn-secondary btn-sm a button is-link is-light is-outlined --%>
-                            </div>
+                               <asp:Button ID="btnVolver" runat="server" Text="Volver al Inicio" CssClass="button is-link is-light is-outlined is-normal" OnClick="btnVolver_Click" />
                         </div>
                     </div>
                 </div>
@@ -67,7 +65,7 @@
         </section>
 
     </form>
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <script  src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
 <script src="Scripts/ModoOscuro.js"></script>
 </body>
 </html>

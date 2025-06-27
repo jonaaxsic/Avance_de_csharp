@@ -74,7 +74,7 @@
                     <div class="field has-text-centered"> <%-- text-center a field has-text-centered --%>
                         <div class="control">
                             <%-- ID cambiado a btnVolver para que ModoOscuro.js lo gestione --%>
-                            <asp:Button ID="btnVolver" runat="server" Text="Volver al Inicio" CssClass="button is-link is-light is-outlined" OnClick="Btn_index_Click" /> <%-- Btn_index a btnVolver, btn btn-secondary a button is-link is-light is-outlined --%>
+                            <asp:Button ID="btnVolver" runat="server" Text="Volver al Inicio" CssClass="button is-link is-light is-outlined is-normal" OnClick="btnVolver_Click" />
                         </div>
                     </div>
                 </div>
