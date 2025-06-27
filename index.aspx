@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EPE 3</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body class="has-background-white-bis has-text-black is-flex is-flex-direction-column min-vh-100 p-5" data-theme="light">
@@ -121,7 +121,7 @@
         </div>
     </form>
 
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <script  src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
     <script src="Scripts/ModoOscuro.js"></script> <%-- Ruta ajustada si es necesario --%>
 </body>
 </html>
