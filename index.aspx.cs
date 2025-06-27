@@ -44,6 +44,17 @@ namespace miApp
         {
             Response.Redirect("WebForm5.aspx");
         }
+
+        protected void btnPG6_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm6.aspx");
+        }
+
+
+
+
+
+
     }
 
 

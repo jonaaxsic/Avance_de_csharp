@@ -4,67 +4,92 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calcula EPE + EVA</title>
 
-    <title>Notas Eva y Epe</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40JuKCqigbGd4xlt+wl3I5/sYJL+XhksM7rRkG/xMwtjI+s0zD/eR3/U4r9N8J6hN2W4/s/mBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="min-vh-100" style="background: linear-gradient(to right, #5d6d7e , #d5d8dc);">
-    <form id="form1" runat="server" class="w-100">
-        <div class="container py-5">
-            <div class="card mx-auto shadow-sm" style="max-width: 600px;">
-                <div class="card-body">
-                    <!-- Encabezado -->
-                    <div class="text-center mb-4">
-                        <h2 class="fw-bold">Jonathan Rodriguez & Yorsua Herrera</h2>
-                        <h5 class="text-muted">Página 1</h5>
-                        <img src="IMG/IPCHILE.png" class="img-fluid my-3" style="max-width: 150px;" />
-                        <h4 class="mt-3">Calcular EPE + EVA</h4>
+<body class="has-background-white-ter is-flex is-flex-direction-column is-justify-content-center min-vh-100 p-5" data-theme="light">
+    <form id="form1" runat="server">
+        <div class="container is-max-desktop py-6">
+            <div class="is-flex is-justify-content-flex-end" style="margin-bottom: 1rem;">
+                <button id="themeToggleButton" class="button is-light is-outlined is-small">
+                    <span class="icon">
+                        <i class="fas fa-moon"></i>
+                    </span>
+                    <span id="themeButtonText">Modo Oscuro</span>
+                </button>
+            </div>
+
+            <div class="box has-background-white-bis p-5 is-shadowless">
+                <h2 class="title is-4 has-text-black mb-4" id="mainTitleWebForm1">Calculadora de Notas EPE + EVA</h2>
+                <p class="subtitle is-6 has-text-grey mb-5" id="subtitleWebForm1">Introduce tus notas para calcular tu promedio final.</p>
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label has-text-black">Nota EVA 1:</label>
+                            <div class="control">
+                                <asp:TextBox ID="txtEva1" runat="server" CssClass="input is-primary"></asp:TextBox>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label has-text-black">Nota EVA 2:</label>
+                            <div class="control">
+                                <asp:TextBox ID="txtEva2" runat="server" CssClass="input is-primary"></asp:TextBox>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label has-text-black">Nota EVA 3:</label>
+                            <div class="control">
+                                <asp:TextBox ID="txtEva3" runat="server" CssClass="input is-primary"></asp:TextBox>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Formulario -->
-                    <div class="mb-3">
-                        <label for="txtEva1" class="form-label">EVA1:</label>
-                        <asp:TextBox ID="txtEva1" runat="server" CssClass="form-control" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="txtEva2" class="form-label">EVA2:</label>
-                        <asp:TextBox ID="txtEva2" runat="server" CssClass="form-control" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="txtEva3" class="form-label">EVA3:</label>
-                        <asp:TextBox ID="txtEva3" runat="server" CssClass="form-control" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="txtEpe1" class="form-label">EPE1:</label>
-                        <asp:TextBox ID="txtEpe1" runat="server" CssClass="form-control" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="txtEpe2" class="form-label">EPE2:</label>
-                        <asp:TextBox ID="txtEpe2" runat="server" CssClass="form-control" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="txtEpe3" class="form-label">EPE3:</label>
-                        <asp:TextBox ID="txtEpe3" runat="server" CssClass="form-control" />
-                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label has-text-black">Nota EPE 1:</label>
+                            <div class="control">
+                                <asp:TextBox ID="txtEpe1" runat="server" CssClass="input is-primary"></asp:TextBox>
+                            </div>
+                        </div>
 
-                    <!-- Resultado -->
-                    <div class="mb-3">
-                        <label class="form-label">Resultado:</label>
-                        <asp:Label ID="lblResultado" runat="server" CssClass="form-control-plaintext fw-bold text-primary" />
-                    </div>
+                        <div class="field">
+                            <label class="label has-text-black">Nota EPE 2:</label>
+                            <div class="control">
+                                <asp:TextBox ID="txtEpe2" runat="server" CssClass="input is-primary"></asp:TextBox>
+                            </div>
+                        </div>
 
-                    <!-- Botones -->
-                    <div class="d-grid gap-2">
-                        <asp:Button ID="btnCalcular" runat="server" Text="Calcular" CssClass="btn btn-success btn-sm" OnClick="btnCalcular_Click" />
-                        <asp:Button ID="Btn_index" runat="server" Text="Volver al Inicio" CssClass="btn btn-secondary btn-sm" OnClick="Btn_index_Click" />
+                        <div class="field">
+                            <label class="label has-text-black">Nota EPE 3:</label>
+                            <div class="control">
+                                <asp:TextBox ID="txtEpe3" runat="server" CssClass="input is-primary"></asp:TextBox>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+                <div class="field is-grouped is-grouped-centered mt-5">
+                    <div class="control">
+                        <asp:Button ID="btnCalcular" runat="server" Text="Calcular" CssClass="button is-white is-outlined is-normal" OnClick="btnCalcular_Click" />
+                    </div>
+                    <div class="control">
+                        <asp:Button ID="btnVolver" runat="server" Text="Volver al Inicio" CssClass="button is-link is-light is-outlined is-normal" OnClick="btnVolver_Click" />
+                    </div>
+                </div>
+
+                <div class="has-text-centered mt-5">
+                    <asp:Label ID="lblResultado" runat="server" CssClass="title is-4 has-text-black"></asp:Label>
                 </div>
             </div>
         </div>
     </form>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <script src="Scripts/ModoOscuro.js"></script>
 </body>
 </html>

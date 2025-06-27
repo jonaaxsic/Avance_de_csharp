@@ -34,8 +34,9 @@ namespace miApp
 
 
 
-        protected void Btn_index_Click(object sender, EventArgs e)
+        protected void btnVolver_Click(object sender, EventArgs e)
         {
+            // Redirige a la página principal (index.aspx)
             Response.Redirect("index.aspx");
         }
     }
