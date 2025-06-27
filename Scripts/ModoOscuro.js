@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeButtonText = document.getElementById('themeButtonText');
     const body = document.body;
 
-    // Elementos que podrían estar presentes en diferentes páginas
+    // Elementos presentes en diferentes páginas
     const h2Title = document.querySelector('h2.title');
     const eppSubtitle = document.getElementById('eppSubtitle');
     const pageSubtitle = document.getElementById('pageSubtitle');
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formLabels = document.querySelectorAll('.field .label');
     const formButtons = document.querySelectorAll('.field.is-grouped .button');
 
-    // Elimina todas las clases de color y fondo de Bulma de un elemento
+    // Eliminar todas las clases de color y fondo de Bulma 
     const removeBulmaColorClasses = (element) => {
         element.classList.remove(
             'is-primary', 'is-link', 'is-info', 'is-success', 'is-warning', 'is-danger',
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     };
 
-    // Aplica el tema claro u oscuro
+    // Aplicar el tema claro u oscuro
     const applyTheme = (theme) => {
         if (!themeToggleButton || !themeButtonText || !body) {
             console.error('Elementos esenciales no encontrados para aplicar el tema.');
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Cambia entre temas claro y oscuro
+    // Cambiar entre temas claro y oscuro
     const toggleTheme = () => {
         const currentTheme = body.getAttribute('data-theme');
         if (currentTheme === 'light') {
